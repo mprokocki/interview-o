@@ -1,0 +1,13 @@
+# How to run it ?
+
+
+1. Compile it through `cd ./interview-o && go build .`
+2. Run it through `./interview-o`
+2.1 To do requests pass flags -url -req -interval
+ ```
+  ./interview-o -url=http://api.nbp.pl/api/exchangerates/rates/a/eur/last/100/\?format\=json -interval=10 -req=5
+ ```
+2.2 There's second command called rates which will show you last 100 rates that are out of scope 4.5 <-> 4.7
+```
+  ./interview-o rates
+```
